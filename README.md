@@ -24,7 +24,7 @@ public function fields(Request $request)
     Text::make('E-mail'),
     
     // Shows audit log button on detail view, which expands audit trail
-    AuditableLog::make()
+    \Devpartners\AuditableLog\AuditableLog::make()
   ];
 
 }
